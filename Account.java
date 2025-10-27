@@ -1,18 +1,18 @@
-package ques4;
-public abstract class Account 
+package ques5;
+abstract class Account 
 {
     int Id;
     String Account_holder_name;
     String Address;
     
-    abstract void deposit();
+    abstract void deposit(int amount);
     
-    abstract void withdraw();
+    abstract void withdraw(int amount);
    
-    Account(int i,String name, String add)
+    Account(int Id,String Account_holder_name,String Address)
     {
-         Id=i;
-        Account_holder_name=name;
-        Address=add;
+        this.Id=Id;
+        this.Account_holder_name=Account_holder_name;
+        this.Address=Address;
     }
 }
